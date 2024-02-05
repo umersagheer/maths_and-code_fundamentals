@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Math fundamentals</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="text-5xl">Euclidean Distance</div>
+      <form id="form" class="grid grid-cols-4 gap-2 my-4 *:rounded-md">
+        <label for="p1x">Enter Point1 X</label>
+        <input type="number" name="p1x" id="p1x" />
+        <label for="p1y">Enter Point1 Y</label>
+        <input type="number" name="p1y" id="p1y" />
+
+        <label for="p2x">Enter Point2 X</label>
+        <input type="number" name="p2x" id="p2x" />
+        <label for="p2y">Enter Point2 Y</label>
+        <input type="number" name="p2y" id="p2y" />
+        <div class="col-span-4 my-2">
+          <button class="bg-neutral-900 px-3 py-1" type="submit">
+            Calculate
+          </button>
+        </div>
+        <p class="font-semibold text-2xl">Result: <span id="result"></span></p>
+      </form>
+    </div>
+    <script type="module" src="/EuclideanDistance.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
